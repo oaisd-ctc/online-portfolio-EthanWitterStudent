@@ -1,0 +1,25 @@
+body
+{
+    background-color: rgb(63, 132, 199);
+    /*Custom font schenanigans will be needed*/ 
+    font-family: "Oswald", 'Times New Roman';
+}
+header
+{
+    background-color: rgb(7, 56, 99);
+    /*May need to be bolded, we'll see*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* footer
+{
+
+} */
+
+
+
+
+
+
+
+
+/*Produced by Ethan Witter/*
