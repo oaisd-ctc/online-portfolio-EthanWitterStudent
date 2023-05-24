@@ -1,25 +1,87 @@
+/* Body segment decoration */
 body
 {
     background-color: rgb(63, 132, 199);
-    /*Custom font schenanigans will be needed*/ 
-    font-family: "Oswald", 'Times New Roman';
 }
 header
 {
     background-color: rgb(7, 56, 99);
     /*May need to be bolded, we'll see*/
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+main
+{
+    font-family: 'Oswald', 'Times New Roman';
 }
 /* footer
 {
 
 } */
 
+/* Element Decoration */
+a 
+{
+    color: rgb(38,230,252);
+}
+/*Did beige instead of green, looks better honestly*/
+a:hover
+{
+    color: rgb(245, 245, 220);
+}
+button
+{
+    background-color: rgb(13,82,149);
+}
 
+/* class decoration */
+.SectionFlexContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*items need to be spaced out somehow*/
+}
+/* .SectionFlexItem
+{
 
+} */
+.navFlexContainer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* .navflexitem
+{
 
+} */
 
+/* ID decoration */
+#PersonalInfoDiv
+{
+    background-color: rgb(28,68,137);
 
+}
+#BuisnessThingsDiv
+{
+    background-color: rgb(47,91,164);
+
+}
+#GithubLinksDiv
+{
+    background-color: rgb(24,57,111);
+
+}
+
+/*I tried to get a custom font...*/
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/oswald/v49/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUhiZTaR.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
 
 
 /*Produced by Ethan Witter/*

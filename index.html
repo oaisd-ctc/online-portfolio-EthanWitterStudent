@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <!--Access the CSS file-->
         <link rel="stylesheet" href="css/page_drip.css">
-        <!--Meta tags for comfortable viewing-->
-        <meta charset="utf-8">
+        <!-- Meta tags for comfortable viewing
+        <meta charset="utf-8"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--I recall hearing the title needed to be placed later. Idk if thats true but just to be safe...-->
         <title>*Placeholder*</title>
@@ -12,21 +13,36 @@
     <body>
         <header>
             <!--nav must be placed inside header from what I can tell-->
-            <nav>
-                nav test
+            <!--How can we have nav present on the top of the screen at all times?-->
+            <nav class="navFlexContainer">
+                <a href="#PersonalInfoDiv">About Me</a>
+                <a href="#BuisnessThingsDiv">Buisness</a>
+                <a href="#GithubLinksDiv">What I do</a>
             </nav>
         </header>
-        <main>
-            <!--These divs will serve for the 3 "segments" of the portfolio-->
-            <div>
-
-            </div>
-            <div>
+        <main class="SectionFlexContainer">
+            <!--SectionFlexItem serves as the 3 segments of the website, with their IDs personalizing them further-->
+                <div class = "SectionFlexItem" id="PersonalInfoDiv">
+                    <p>I HAENT SLEPT IN 3 DAYS HE;P MEEE</p>
+                    <!-- This will become the photo cube but this works for now -->
+                    <img src="images/Dapper E.jpg">
+                </div>
+                <div class = "SectionFlexItem" id="BuisnessThingsDiv">
+                    <p>I HAENT SLEPT IN 3 DAYS HE;P MEEE</p>
+                    <!--Clicking the button should begin resume download. Currently doesn't work. Might be best accomplished with JS-->
+                    <button type="button">Download Resume</button>
+                </div>
+                <!--Links to github, and the various "standout" Projects-->
+                <div class = "SectionFlexItem" id="GithubLinksDiv">
+                    <!--Note: no projects are currently displayed on the github account. Might wanna fix that-->
+                    <!--Also E dapper is currently serving as a placeholder, it should be the github logo-->
+                    <a href="https://github.com/EthanWitterStudent"><img src="images/Dapper E.jpg"></a>
                 
-            </div>
-            <div>
-                
-            </div>
+                    <a href="https://github.com/oaisd-ctc/reinventing-the-wheel-EthanWitterStudent">Reinventing the Wheel</a>
+                    <a href="https://github.com/oaisd-ctc/exploring-new-languages-EthanWitterStudent">Exploring New Languages</a>
+                    <a href="https://martinezclassroom.com/Projects/RedditSimulator2009/index.html">Reddit Simulator 2009</a>
+                    <a href="https://github.com/oaisd-ctc/final-project-Alexander-Wilhelm-Student">Reddit Simulator 2009 [Source Code]</a>
+                </div>
         </main>
         <!--very bottom of the webpage-->
         <footer>
