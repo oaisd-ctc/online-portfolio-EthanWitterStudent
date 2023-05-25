@@ -7,7 +7,7 @@
         <meta charset="utf-8"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--I recall hearing the title needed to be placed later. Idk if thats true but just to be safe...-->
-        <title>*Placeholder*</title>
+        <title>Ethan Witter's Online Portfolio</title>
     </head>
 
     <body>
@@ -15,33 +15,59 @@
             <!--nav must be placed inside header from what I can tell-->
             <!--How can we have nav present on the top of the screen at all times?-->
             <nav class="navFlexContainer">
-                <a href="#PersonalInfoDiv">About Me</a>
-                <a href="#BuisnessThingsDiv">Buisness</a>
-                <a href="#GithubLinksDiv">What I do</a>
+                <a href="#PersonalInfoDiv" class="navflexitem">About Me</a>
+                <a href="#BuisnessThingsDiv" class="navflexitem">Buisness</a>
+                <a href="#GithubLinksDiv" class="navflexitem">What I do</a>
             </nav>
         </header>
         <main class="SectionFlexContainer">
             <!--SectionFlexItem serves as the 3 segments of the website, with their IDs personalizing them further-->
                 <div class = "SectionFlexItem" id="PersonalInfoDiv">
-                    <p>I HAENT SLEPT IN 3 DAYS HE;P MEEE</p>
+                    <!--is this improper grammer? idk-->
+                    <img src="images/Dapper E.jpg"> 
+                    <p>Hello, my name is Ethan Witter</p>
+                    <p>I'm a novice artist, amateur writer, programmer, video gamer enjoyer, and bad joke extrodinare (you've been warned!)</p>
+                    <p>Currently I'm trying to amass the skills to create amazing works of art. Hopefully that'll bear fruit one day...</p>
+                    <p>You can email me at ethanwitter13@gmail.com</p>
+                    <p>Or, if you'd like to talk directly, you can call me with 616-405-6296</p>
                     <!-- This will become the photo cube but this works for now -->
-                    <img src="images/Dapper E.jpg">
+                    <!-- cube/photo needs to be positioned to the left, with the text on the right-->
                 </div>
                 <div class = "SectionFlexItem" id="BuisnessThingsDiv">
-                    <p>I HAENT SLEPT IN 3 DAYS HE;P MEEE</p>
+                    <p>I'm offically certified! Though OBVIOUSLY that was clear based on this <em>very amazing</em> website!</p>
+                    <p>Here's what I'm certified in:</p>
+                    <div class="CertificationFlexContainer">
+                        <!-- links currently go to explanations..maybe it would be better to link to proof you have it? We'll see -->
+                        <div class="CertificationFlexitem">
+                            <a href="https://certiport.pearsonvue.com/Certifications/IC3/Digital-Literacy-Certification/Badging" target="_blank"><img src="images/IC3-logo.png"></a>
+                        </div>
+                        <div class="CertificationFlexitem">
+                            <a href="https://www.credly.com/org/certiport/badge/it-specialist-html-and-css" target="_blank"><img src="images/ITS-HTML&CSS-logo.png"></a>
+                        </div>
+                        <div class="CertificationFlexitem">
+                            <a href="https://www.comptia.org/faq/itf/what-is-the-comptia-itf-certification" target="_blank"><img src="images/ITF-logo.png"></a>
+                        </div>
+                    </div>
                     <!--Clicking the button should begin resume download. Currently doesn't work. Might be best accomplished with JS-->
+                    <!--Text here should align center? maybe? idk how it'd look-->
+                    <div style="background-color: rgb(13,82,149);">
+                    <p>You could also check out my resume:</p>
                     <button type="button">Download Resume</button>
+                    </div>
                 </div>
                 <!--Links to github, and the various "standout" Projects-->
                 <div class = "SectionFlexItem" id="GithubLinksDiv">
                     <!--Note: no projects are currently displayed on the github account. Might wanna fix that-->
-                    <!--Also E dapper is currently serving as a placeholder, it should be the github logo-->
-                    <a href="https://github.com/EthanWitterStudent"><img src="images/Dapper E.jpg"></a>
-                
-                    <a href="https://github.com/oaisd-ctc/reinventing-the-wheel-EthanWitterStudent">Reinventing the Wheel</a>
-                    <a href="https://github.com/oaisd-ctc/exploring-new-languages-EthanWitterStudent">Exploring New Languages</a>
-                    <a href="https://martinezclassroom.com/Projects/RedditSimulator2009/index.html">Reddit Simulator 2009</a>
-                    <a href="https://github.com/oaisd-ctc/final-project-Alexander-Wilhelm-Student">Reddit Simulator 2009 [Source Code]</a>
+                    <p>If your curious what I do/have done, you could check out my github!</p>
+                    <!-- We'll see if this logo works, .avif files are weird -->
+                    <!-- logo was also initally big, used inline style to tone it down -->
+                    <a href="https://github.com/EthanWitterStudent"><img src="images/github logo.avif" style="width: 20%;" height="20%"></a>
+                    
+                    <p>Though these are the projects I'm most proud of:</p>
+                    <a href="https://github.com/oaisd-ctc/reinventing-the-wheel-EthanWitterStudent">Reinventing the Wheel</a> <br>
+                    <a href="https://github.com/oaisd-ctc/exploring-new-languages-EthanWitterStudent">Exploring New Languages</a> <br>
+                    <a href="https://martinezclassroom.com/Projects/RedditSimulator2009/index.html">Reddit Simulator 2009</a> <br>
+                    <a href="https://github.com/oaisd-ctc/final-project-Alexander-Wilhelm-Student">Reddit Simulator 2009 [Source Code]</a> <br>
                 </div>
         </main>
         <!--very bottom of the webpage-->

@@ -13,6 +13,8 @@ header
 main
 {
     font-family: 'Oswald', 'Times New Roman';
+    font-size: large;
+    color: black;
 }
 /* footer
 {
@@ -32,6 +34,7 @@ a:hover
 button
 {
     background-color: rgb(13,82,149);
+    color: rgb(38,230,252);
 }
 
 /* class decoration */
@@ -40,28 +43,54 @@ button
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*items need to be spaced out somehow*/
 }
-/* .SectionFlexItem
+.SectionFlexItem
 {
-
-} */
+    /* may change to margin-bottom if this doesn't work */
+    margin-top: 1.8rem;
+    /*this width works, we'll see how it looks on various displays though*/
+    width: 65rem;
+}
 .navFlexContainer
 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /*if this spacing doesn't work margin can be specified for different areas around something (left, right, etc.)*/
+    justify-content: space-around;
 }
-/* .navflexitem
+.navflexitem
 {
+    font-size: xx-large;
+    color: black;
+    text-decoration: none;
+    padding: 0.3em;
+}
+.CertificationFlexContainer
+{
+    display: flex;
+    justify-content: center;
+}
+.CertificationFlexitem
+{
+    margin: 1em;
+}
 
-} */
+.CertificationFlexitem img
+{
+    max-width: 18rem;
+}
 
 /* ID decoration */
 #PersonalInfoDiv
 {
     background-color: rgb(28,68,137);
-
+    text-align: right;
+}
+#PersonalInfoDiv img
+{
+    float: left;
+    margin: 1.6rem;
 }
 #BuisnessThingsDiv
 {
@@ -71,10 +100,9 @@ button
 #GithubLinksDiv
 {
     background-color: rgb(24,57,111);
-
 }
 
-/*I tried to get a custom font...*/
+/*I tried to get a custom font...to no sucess*/
 @font-face {
     font-family: 'Oswald';
     font-style: normal;
