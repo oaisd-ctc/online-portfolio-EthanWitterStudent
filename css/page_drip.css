@@ -15,18 +15,26 @@ main
     font-family: 'Oswald', 'Times New Roman';
     font-size: large;
     color: black;
+    font-weight: bold;
 }
 /* footer
 {
 
 } */
+/*This just makes the scrolling smooth instead of a "jump"*/
+html 
+{
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+}
 
 /* Element Decoration */
 a 
 {
     color: rgb(38,230,252);
+    font-weight: normal;
 }
-/*Did beige instead of green, looks better honestly*/
+/*I did beige instead of green, looks better honestly*/
 a:hover
 {
     color: rgb(245, 245, 220);
@@ -47,7 +55,7 @@ button
 .SectionFlexItem
 {
     /* may change to margin-bottom if this doesn't work */
-    margin-top: 1.8rem;
+    margin-top: 3.3rem;
     /*this width works, we'll see how it looks on various displays though*/
     width: 65rem;
 }
@@ -58,6 +66,13 @@ button
     justify-content: center;
     /*if this spacing doesn't work margin can be specified for different areas around something (left, right, etc.)*/
     justify-content: space-around;
+    
+    /* this is so its always at the top of the page, I.E it scrolls with the user */
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color: rgb(7,56,99);
 }
 .navflexitem
 {
@@ -80,6 +95,16 @@ button
 {
     max-width: 18rem;
 }
+.CertificationFlexitem img:hover
+{
+    display: inline-block;
+    opacity: 0.5;
+}
+.codingDemonstration
+{
+    color: whitesmoke;
+    font-weight: normal;
+}
 
 /* ID decoration */
 #PersonalInfoDiv
@@ -100,6 +125,18 @@ button
 #GithubLinksDiv
 {
     background-color: rgb(24,57,111);
+    text-align: left;
+}
+#GithubLinksDiv img
+{
+    float: right;
+    margin: 2rem;
+    max-width: 30%;
+}
+#GithubLinksDiv img:hover
+{
+    display: inline-block;
+    opacity: 0.5;
 }
 
 /*I tried to get a custom font...to no sucess*/

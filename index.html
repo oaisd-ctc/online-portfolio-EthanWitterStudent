@@ -16,7 +16,7 @@
             <!--How can we have nav present on the top of the screen at all times?-->
             <nav class="navFlexContainer">
                 <a href="#PersonalInfoDiv" class="navflexitem">About Me</a>
-                <a href="#BuisnessThingsDiv" class="navflexitem">Buisness</a>
+                <a href="#BuisnessThingsDiv" class="navflexitem">Business</a>
                 <a href="#GithubLinksDiv" class="navflexitem">What I do</a>
             </nav>
         </header>
@@ -48,11 +48,13 @@
                             <a href="https://www.comptia.org/faq/itf/what-is-the-comptia-itf-certification" target="_blank"><img src="images/ITF-logo.png"></a>
                         </div>
                     </div>
-                    <!--Clicking the button should begin resume download. Currently doesn't work. Might be best accomplished with JS-->
-                    <!--Text here should align center? maybe? idk how it'd look-->
-                    <div style="background-color: rgb(13,82,149);">
+                    <!--Get second opinion on whether aligned to the center looks good-->
+                    <div style="background-color: rgb(13,82,149); text-align: center;">
                     <p>You could also check out my resume:</p>
-                    <button type="button">Download Resume</button>
+                        <!--"download" type is a thing, no js needed!-->
+                        <a href="Ethan Witter - Resume.pdf" download="Ethan Witter - Resume">   
+                            <button type="button">Download Resume</button>
+                        </a>
                     </div>
                 </div>
                 <!--Links to github, and the various "standout" Projects-->
@@ -60,14 +62,58 @@
                     <!--Note: no projects are currently displayed on the github account. Might wanna fix that-->
                     <p>If your curious what I do/have done, you could check out my github!</p>
                     <!-- We'll see if this logo works, .avif files are weird -->
-                    <!-- logo was also initally big, used inline style to tone it down -->
-                    <a href="https://github.com/EthanWitterStudent"><img src="images/github logo.avif" style="width: 20%;" height="20%"></a>
+                    <a href="https://github.com/EthanWitterStudent"><img src="images/github logo.avif"></a>
                     
                     <p>Though these are the projects I'm most proud of:</p>
-                    <a href="https://github.com/oaisd-ctc/reinventing-the-wheel-EthanWitterStudent">Reinventing the Wheel</a> <br>
-                    <a href="https://github.com/oaisd-ctc/exploring-new-languages-EthanWitterStudent">Exploring New Languages</a> <br>
+                    <a href="https://github.com/oaisd-ctc/reinventing-the-wheel-EthanWitterStudent">Reinventing the Wheel</a> 
+                    <!--These are coding snippits from the projects. line breaks frequent to simulate how they look in the code-->
+                    <p class="codingDemonstration">public static string Reverse(string s)  <br>
+                        {     <br>
+                        char[] NotSoup = new char[s.Length];  <br>
+                        int iTheSecond = 0;  <br>
+                        for(int i = s.Length - 1; i >= 0; i--) {  <br>
+                            NotSoup[iTheSecond] = s[i];  <br>
+                            iTheSecond++;  <br>
+                        }  <br>
+                        return new string(NotSoup);  <br> 
+                        }</p>
+                    <a href="https://github.com/oaisd-ctc/exploring-new-languages-EthanWitterStudent">Exploring New Languages</a> 
+                    <p class="codingDemonstration">def DecodeSecretMessage(): <br>
+                        with open('/workspaces/exploring-new-languages-EthanWitterStudent/secretMessage.txt','r') as file: <br>
+                            ReadingString = file.read() <br>
+                            <br>
+                        SplittedString = ReadingString.split(" ") <br>
+                        <br>
+                        for i in range(0, len(SplittedString)): <br>
+                            SplittedString[i] = int(SplittedString[i]) <br>
+                            <br> 
+                        for i in range(0, len(SplittedString)): <br>
+                            SplittedString[i] = chr(SplittedString[i]) <br>
+                            <br>
+                        decode= ''.join(SplittedString) <br>
+                        return decode</p>
                     <a href="https://martinezclassroom.com/Projects/RedditSimulator2009/index.html">Reddit Simulator 2009</a> <br>
-                    <a href="https://github.com/oaisd-ctc/final-project-Alexander-Wilhelm-Student">Reddit Simulator 2009 [Source Code]</a> <br>
+                    <a href="https://github.com/oaisd-ctc/final-project-Alexander-Wilhelm-Student">Reddit Simulator 2009 [Source Code]</a> 
+                    <p class="codingDemonstration">using System.Collections; <br>
+                        using System.Collections.Generic; <br>
+                        using UnityEngine; <br>
+                        <br>
+                        public class unapprochableGimic : MonoBehaviour <br>
+                        { <br>
+                            TowerManager tm; <br>
+                            <br>
+                            <br>
+                            private void Start() <br>
+                            {<br>
+                                tm = FindObjectOfType<TowerManager>();<br>
+                                tm.juanCheck = true;<br>
+                            }<br>
+                            <br>
+                            private void OnDestroy() <br>
+                            {<br>
+                                tm.juanCheck = false;<br>
+                            }<br>
+                        }</p>
                 </div>
         </main>
         <!--very bottom of the webpage-->
