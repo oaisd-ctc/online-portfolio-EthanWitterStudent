@@ -1,3 +1,10 @@
+/*This just makes the scrolling smooth instead of a "jump"*/
+html 
+{
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+}
+
 /* Body segment decoration */
 body
 {
@@ -16,16 +23,6 @@ main
     font-size: large;
     color: black;
     font-weight: bold;
-}
-/* footer
-{
-
-} */
-/*This just makes the scrolling smooth instead of a "jump"*/
-html 
-{
-    scroll-behavior: smooth;
-    scroll-padding-top: 4.5rem;
 }
 
 /* Element Decoration */
@@ -51,13 +48,14 @@ button
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .SectionFlexItem
 {
     /* may change to margin-bottom if this doesn't work */
     margin-top: 3.3rem;
-    /*this width works, we'll see how it looks on various displays though*/
-    width: 65rem;
+    /*changed to percentage since it looks atrocious on mobile*/
+    width: 60%;
 }
 .navFlexContainer
 {
@@ -85,6 +83,7 @@ button
 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .CertificationFlexitem
 {
