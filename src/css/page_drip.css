@@ -10,6 +10,8 @@ html
 body
 {
     background-color: rgb(63, 132, 199);
+     /* who knew fixing the nav bar was that easy lol */
+     margin: 0;
 }
 header
 {
