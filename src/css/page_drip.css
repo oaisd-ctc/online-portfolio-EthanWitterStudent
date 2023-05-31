@@ -3,7 +3,7 @@ html
 {
     scroll-behavior: smooth;
     /* Changed to ViewportHeight to hopefully be better for mobile */
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 10vw;
 }
 
 /* Body segment decoration */
@@ -95,7 +95,8 @@ button
 .CertificationFlexitem img
 {
     /*Changed the relative unit to be based on the viewport...gosh I hope this works*/
-    max-width: 16vw;
+    /*It kinda did!*/
+    max-width: 20vw;
 } 
 .CertificationFlexitem img:hover
 {
