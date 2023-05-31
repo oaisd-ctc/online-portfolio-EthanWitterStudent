@@ -2,14 +2,16 @@
 html 
 {
     scroll-behavior: smooth;
-    /* Changed to percentage to hopefully be better for mobile */
-    scroll-padding-top: 10%;
+    /* Changed to ViewportHeight to hopefully be better for mobile */
+    scroll-padding-top: 10vh;
 }
 
 /* Body segment decoration */
 body
 {
     background-color: rgb(63, 132, 199);
+     /* who knew fixing the nav bar was that easy lol */
+     margin: 0;
 }
 header
 {
@@ -49,7 +51,6 @@ button
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 .SectionFlexItem
 {
@@ -91,18 +92,16 @@ button
 {
     margin: 1em;
 }
-
 .CertificationFlexitem img
 {
-    /* The images are essentially "fighting" to be as big as possible
-    The best solution I have rn is making the max smaller */
-    max-width: 16rem;
-}
+    /*Changed the relative unit to be based on the viewport...gosh I hope this works*/
+    max-width: 16vw;
+} 
 .CertificationFlexitem img:hover
 {
     display: inline-block;
     opacity: 0.5;
-}
+} 
 .codingDemonstration
 {
     color: whitesmoke;
