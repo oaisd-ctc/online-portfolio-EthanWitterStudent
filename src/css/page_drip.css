@@ -2,7 +2,8 @@
 html 
 {
     scroll-behavior: smooth;
-    scroll-padding-top: 4.5rem;
+    /* Changed to percentage to hopefully be better for mobile */
+    scroll-padding-top: 10%;
 }
 
 /* Body segment decoration */
@@ -48,18 +49,19 @@ button
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .SectionFlexItem
 {
     /* may change to margin-bottom if this doesn't work */
-    margin-top: 3.3rem;
+    margin-top: 3.8%;
     /*changed to percentage since it looks atrocious on mobile*/
     width: 60%;
 }
 .navFlexContainer
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     /*if this spacing doesn't work margin can be specified for different areas around something (left, right, etc.)*/
@@ -92,7 +94,9 @@ button
 
 .CertificationFlexitem img
 {
-    max-width: 18rem;
+    /* The images are essentially "fighting" to be as big as possible
+    The best solution I have rn is making the max smaller */
+    max-width: 16rem;
 }
 .CertificationFlexitem img:hover
 {
