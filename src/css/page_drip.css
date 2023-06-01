@@ -2,8 +2,8 @@
 html 
 {
     scroll-behavior: smooth;
-    /* Changed to ViewportHeight to hopefully be better for mobile */
-    scroll-padding-top: 10vw;
+    /* Theres got to be something that works for this... */
+    scroll-padding-top: 10%;
 }
 
 /* Body segment decoration */
